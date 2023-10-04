@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+
+*{
+	font-family: 'McLaren', cursive !important;
+}
+
+@layer components {
+  .menu-flags > button {
+    @apply bg-[#7EA2FF] text-white text-[12px] border-[1px] border-[#a5bfff];
+  }
+  .menu-flags > button > span {
+    @apply text-[15px];
+  }
+  .menu-flags > ul {
+    @apply bg-[#7EA2FF] text-white;
+  }
+  .menu-flags > ul > li {
+    @apply bg-[#7EA2FF] text-white;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #fdfffc33;
+    height: 20px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #fdfffc4d;
+  }
+}
+
+.animate {
+  transform: translateY(0) !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
